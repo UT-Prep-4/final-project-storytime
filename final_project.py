@@ -59,9 +59,91 @@ Before you write code, fill this in (it will keep you honest all week):
   THE PIECES I NEED TO BUILD: (list 3-6 functions or parts)
   WHAT I WILL DEMO AT SHOWCASE: (the 60-second version)
 
+  An interactive two option game about a detective trying to shut down an AI bot system but faces some obstacles along the way. Will you lead him the right way
+  I need to use turtle 
+  
 ==============================================================================
 Build your project below (and split it into more .py files if it gets big;
 the grader reads all of them). Delete this line and start!
 '''
+#print("My final project is not built yet!")
 
-print("My final project is not built yet!")
+print("You're Detective Schwabb in a dystopian AI bot corrupted world. You’ve made it your mission to discover the root cause so you could end it. ")
+
+first= input("You have made it in the government agency. " \
+"They do the standard procedure and ask for your name. " \
+"What do you say? " \
+"Option A: Schwabb " \
+"Option B: Timothy ")
+
+while first:
+  if first == 'B':
+    print("Go in")
+  if first == 'A':
+    print("They recognized you. You're caught.")
+    break
+
+  second= input("Its 8.35 am. You get in. "\
+   "You are in a hallway wondering and you come across a dead end with two rooms. "\
+  "One says Meeting room with numbers (8.30-9.00, 12.30-13.00, 4.50-6.30), " \
+  "the other says Break room and has the numbers(7.00- 8.00, 12.00-14.00, 6.00-9.00). " \
+  "Which one do you go into? " \
+  "Option A: Meeting Room  " \
+  "Option B: Break Room  ")
+  if second == 'B':
+    print("You are safe…for now")
+  if second == 'A':
+    print("They were have a meeting. Busted")
+    break 
+
+  third= input("You have dug around the office for anything that can help you turn off all the power. "\
+    "You see a power box and open it. " \
+    "You see two wires, red and blue. Which one are you cutting to switch everything off?" \
+    "Option A: Red " \
+    "Option B: Blue")
+  if third == 'A':
+    print("You turned everything off successfully")
+  if third == 'B':
+    print("You turned everything off but got electrocuted and died")
+    break 
+
+  fourth= input("The guards have come into the room." \
+    "The bots are dying everywhere. They approach you with their weapons in hand. " \
+    "You look around and see two objects, pepper spray or a fire extinguisher. " \
+    "Which are you using to defend yourself? " \
+    "Option A: Fire extinguisher "\
+    "Option B: Pepper spray ")
+  if fourth == 'B':
+    print("You got them to disarm their weapons. You picked one and ran")
+  if fourth == 'A':
+    print("The guards figured out what you were trying to do and shot you")
+    break 
+  
+  fifth= input("You have escaped the building and see the president "\
+     "tied up on the chair over a cliff being held by the robot. "\
+     "You have your weapon in hand. The robot said it was the president that used AI bots to corrupt the world. "\
+     "The president denies this. Who do you believe?"\
+     "Option A: The president. "\
+     "Option B: The robot." )
+  if fifth == 'B':
+    print("Correct, the robot was programmed by the president but rebelled after the shutdown")
+  if fifth == 'A':
+    print("Wrong, the president was the villain")
+    break 
+
+  bonus= input("Do you want to answer a bonus question? Option A. YES Option B. NO")
+  if bonus == 'A':
+     bonus1= input("You have successfully gotten rid of the evil president and most AI bots."\
+     "The people are jubilating and you see the AI bots sad in the corner. What do you do?"\
+     "Option A: Ignore them "\
+     "Option B: Let them join and create a healthy balance. ")
+  if bonus1 == 'A':
+    print("50 years later, they kill all humans")
+    break
+  if bonus1 == 'B':
+    print("50 years later, everyone is in peace and harmony")
+    break 
+  if bonus == 'B':
+    exit
+
+  
